@@ -46,7 +46,7 @@ const testimonialData = {
       description:
         "The attention to detail in these components is impressive. From accessibility features to responsive design, everything is well thought out. It's become an essential part of our tech stack.",
       profileImage:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
       name: "David Kim",
       rating: 3.5,
       number: 123456789,
@@ -58,7 +58,7 @@ const testimonialData = {
       description:
         "What sets this component library apart is its flexibility. We've been able to maintain consistency across our applications while still customizing components to match our brand identity perfectly.",
       profileImage:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330",
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
       name: "Emily Thompson",
       rating: 4,
       number: 123456789,
@@ -70,7 +70,7 @@ const testimonialData = {
       description:
         "The performance optimization in these components is outstanding. We've seen significant improvements in our application's load times and overall user experience since implementing them.",
       profileImage:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
       name: "James Wilson",
       rating: 3,
       number: 123456789,
@@ -82,7 +82,7 @@ const testimonialData = {
       description:
         "The community support and regular updates make this component library a reliable choice for our projects. It's clear that the team behind it is committed to maintaining high quality and adding new features.",
       profileImage:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb",
+        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
       name: "Sophia Martinez",
       rating: 5,
       number: 123456789,

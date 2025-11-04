@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Quote, X } from "lucide-react";
+import { X } from "lucide-react";
 import { Button } from "./ui/button";
 
 export interface iTestimonial {
@@ -60,11 +60,7 @@ const Carousel = ({ items, initialScroll = 0 }: iCarouselProps) => {
 
   const handleCardClose = () => {
     if (carouselRef.current) {
-      // const cardWidth = isMobile() ? 230 : 384;
-      // const gap = isMobile() ? 4 : 8;
-      // const scrollPosition = (cardWidth + gap) * (index + 1);
       carouselRef.current.scrollTo({
-        // left: scrollPosition,
         behavior: "smooth",
       });
     }
@@ -116,7 +112,7 @@ const TestimonialCard = ({
   testimonial,
   index,
   onCardClose = () => {},
-  backgroundImage = "https://images.unsplash.com/photo-1686806372726-388d03ff49c8?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  backgroundImage = "./cardBackgound",
 }: {
   testimonial: iTestimonial;
   index: number;
