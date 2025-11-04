@@ -23,7 +23,7 @@ export function Login() {
 
   return (
     <div className="min-h-dvh flex justify-center items-center">
-      <div className="border-1 border-green-300 shadow-2xl shadow-green-300 rounded-xl py-8">
+      <div className="border border-green-300 shadow-2xl shadow-green-300 rounded-xl py-8">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
