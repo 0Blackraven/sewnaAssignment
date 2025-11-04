@@ -47,9 +47,9 @@ const imageSet = [
 ];
 
 const sizeMap = {
-  small: 'w-24 h-32',
-  medium: 'w-32 h-40',
-  large: 'w-40 h-52'
+  small: 'md:w-24 w-10 md:h-32 h-14',
+  medium: 'md:w-32 w-14 md:h-40 h-20',
+  large: 'md:w-40 md:h-52 w-20 h-25'
 };
 
 export function Landing() { 
@@ -72,7 +72,7 @@ export function Landing() {
         >
           <div className="absolute inset-0">
             <img
-              src="https://images.unsplash.com/photo-1704729105381-f579cfcefd63?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXNoaW9uJTIwZGVzaWduZXIlMjBzdHVkaW8lMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYyMjY2MDc5fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              src="./amDeveloperBackground.jpg"
               alt="Designer workspace"
               className="w-full h-full object-cover opacity-70 group-hover:opacity-90 transition-opacity duration-500 group-hover:scale-105"
             />
@@ -101,11 +101,11 @@ export function Landing() {
                 transition={{ duration: 0.3 }}
                 className="mb-6"
               >
-                <Star className="w-12 h-12 text-[#22C55E] mx-auto mb-4" />
-                <h2 className="text-white text-6xl mb-6">
+                <Star className="md:w-12 md:h-12 w-7 h-7 text-[#22C55E] mx-auto md:mb-4" />
+                <h2 className="text-white md:text-6xl text-2xl md:mb-6 mb-3">
                   I am a designer
                 </h2>
-                <p className="text-gray-300 text-xl mb-8 max-w-lg mx-auto">
+                <p className="text-gray-300 md:text-xl text-sm mb-8 max-w-lg mx-auto">
                   Join our platform and connect with clients looking for your creative expertise
                 </p>
               </motion.div>
@@ -113,10 +113,10 @@ export function Landing() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group/btn px-10 py-4 bg-none text-white border rounded-full flex items-center gap-3 mx-auto hover:bg-[#22C55E] hover:text-white transition-all shadow-2xl hover:border-0"
+                className="group/btn px-10 py-4 bg-none text-white border rounded-full flex items-center md:gap-3 mx-auto hover:bg-[#22C55E] hover:text-white transition-all shadow-2xl hover:border-0"
                 onClick={()=>navigate('/login')}
               >
-                <span className="text-lg">Join as Designer</span>
+                <span className="md:text-lg text-sm">Join as Designer</span>
                 <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
               </motion.button>
             </motion.div>
@@ -165,7 +165,7 @@ export function Landing() {
                 <img
                   src={image.src}
                   alt={`${index + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full md:object-cover"
                 />
               </motion.div>
             ))}
@@ -178,7 +178,7 @@ export function Landing() {
             transition={{ duration: 0.5 }}
             className="absolute bottom-10 left-10 w-72 h-72 bg-[#22C55E] rounded-full blur-3xl"
           />
-          <div className="relative h-full flex flex-col items-center justify-center px-8 text-center z-10 bg-white/80 backdrop-blur-sm">
+          <div className="relative h-full flex flex-col items-center justify-center px-8 text-center z-10 bg-white/80 md:backdrop-blur-sm">
             <motion.div
               initial={{ y: 20, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
@@ -191,11 +191,11 @@ export function Landing() {
                 transition={{ duration: 0.3 }}
                 className="mb-6"
               >
-                <Star fill="currentColor" color="[#22C55E]" className="w-12 h-12 text-[#22C55E] mx-auto mb-4" />
-                <h2 className="text-black text-6xl mb-6">
+                <Star fill="currentColor" color="[#22C55E]" className="md:w-12 w-6 md:h-12 h-6 text-[#22C55E] mx-auto mb-4" />
+                <h2 className="text-black md:text-6xl text-2xl  md:mb-6 mb-3">
                   I need a designer
                 </h2>
-                <p className="text-gray-700 text-xl mb-8 max-w-lg mx-auto">
+                <p className="text-gray-700 md:text-xl text-sm mb-8 max-w-lg mx-auto">
                   Find talented designers ready to bring your vision to life
                 </p>
               </motion.div>
@@ -203,10 +203,10 @@ export function Landing() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group/btn px-10 py-4 bg-[#22C55E] text-white rounded-full flex items-center gap-3 mx-auto hover:bg-black transition-all shadow-2xl"
+                className="group/btn px-10 py-4 bg-[#22C55E] text-white rounded-full flex items-center md:gap-3 mx-auto hover:bg-black transition-all shadow-2xl"
                 onClick={()=>navigate('/waitlist')}
               >
-                <span className="text-lg">Hire a Designer</span>
+                <span className="md:text-lg text-sm">Hire a Designer</span>
                 <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1 transition-transform" />
               </motion.button>
             </motion.div>

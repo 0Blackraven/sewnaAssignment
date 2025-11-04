@@ -22,7 +22,7 @@ export function Login() {
   }
 
   return (
-    <div className="min-h-dvh flex justify-center items-center">
+    <div className="min-h-dvh flex justify-center items-center m-6 mt-15 md:p-0 md:mt-0">
       <div className="border border-green-300 shadow-2xl shadow-green-300 rounded-xl py-8">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
@@ -38,10 +38,10 @@ export function Login() {
               transition={{ delay: 0.3 }}
               className="mb-8 flex flex-col justify-center items-center"
             >
-              <text className="text-4xl text-gray-900 mb-3">
+              <text className="md:text-4xl text-2xl text-gray-900 mb-3">
                 Welcome back Wizard !!!
               </text>
-              <text className="text-gray-600">
+              <text className="text-gray-600 text-sm md:text-xl">
                 Sign in to continue to your account
               </text>
             </motion.div>
@@ -51,7 +51,7 @@ export function Login() {
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.4 }}
               onSubmit={handleSubmit}
-              className="space-y-6"
+              className="md:space-y-6 space-y-3"
             >
               <div className="space-y-2">
                 <label className="block text-sm text-gray-700">
@@ -104,7 +104,7 @@ export function Login() {
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                 <Button
                   type="submit"
-                  className="w-full h-12 bg-linear-to-r from-[#22C55E] to-[#16A34A] hover:from-[#16A34A] hover:to-[#22C55E] text-white rounded-xl text-base shadow-lg"
+                  className="w-full h-12 bg-linear-to-r from-[#22C55E] to-[#16A34A] hover:from-[#16A34A] hover:to-[#22C55E] text-white rounded-xl md:text-base text-sm shadow-lg"
                 >
                   Sign In
                 </Button>
@@ -124,7 +124,7 @@ export function Login() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   type="button"
-                  className="h-12 border-2 border-gray-200 rounded-xl hover:border-[#22C55E] transition-all flex items-center justify-center gap-2 p-6"
+                  className="h-12 border-2 border-gray-200 rounded-xl hover:border-[#22C55E] transition-all flex items-center justify-center gap-2 md:p-6 p-2"
                 >
                   <span className="text-gray-700">Google</span>
                 </motion.button>

@@ -24,7 +24,7 @@ export function Waitlist() {
     fileInputRef.current?.click();
   };
   return (
-    <div className="min-h-dvh w-dvw flex flex-col justify-center items-center gap-20 mt-[10%]">
+    <div className="min-h-dvh w-dvw flex flex-col justify-center items-center gap-20 md:mt-[10%] mt-[25%]">
       <motion.div
         className="flex flex-row gap-3 bg-green-100 p-2 rounded-3xl"
         initial={{ scale: 0 }}
@@ -56,27 +56,27 @@ export function Waitlist() {
       </div>
 
       <div className="flex flex-col items-center space-y-6">
-        <div className="text-5xl text-bold flex gap-5">
+        <div className="md:text-5xl text-3xl text-bold flex md:gap-5 gap-3">
           <div className="text-black">Welcome</div>
           <div className="text-green-500">Dreamer !!!</div>
         </div>
-        <div className="text-center text-l">
+        <div className="text-center md:text-l text-sm">
           Connect with talented designers who can bring your vision to life.
           Browse profiles, <br />
           review portfolios, and start your next project today.
         </div>
       </div>
 
-      <div className="w-[90dvw] gap-7 flex flex-col">
+      <div className="w-[90dvw] md:gap-7 gap-4 flex flex-col">
         <div className="flex justify-between items-baseline w-[87dvw] ">
-            <h1 className="text-5xl text-center">Our Top Designers : </h1>
+            <h1 className="md:text-5xl text-2xl text-center">Our Top Designers : </h1>
             <span onClick={() => navigate("/designerList")} className="text-green-500 hover:cursor-pointer"> See More </span>
         </div>
         <DemoOne />
       </div>
-      <div className="w-[60%] rounded-2xl shadow-md space-y-10 p-7">
-        <div className="text-3xl">Project Detail / Inspiration</div>
-        <div className="text-xl">
+      <div className="md:w-[60%] w-[90%] rounded-2xl shadow-md space-y-10 p-7">
+        <div className="md:text-3xl text-xl">Project Detail / Inspiration</div>
+        <div className="md:text-xl text-l">
           Tell us about your design needs or upload relevant files to get
           started with a perfect match.
         </div>
@@ -91,7 +91,7 @@ export function Waitlist() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleUploadClick}
-              className="px-6 py-3 border-2 border-gray-300 rounded-xl hover:border-[#22C55E] hover:bg-[#22C55E]/5 transition-all flex items-center justify-center gap-2 group"
+              className="md:px-6 px-2 py-3 border-2 border-gray-300 rounded-xl hover:border-[#22C55E] hover:bg-[#22C55E]/5 transition-all flex items-center justify-center gap-2 group"
             >
               <File className="w-5 h-5 text-gray-600 group-hover:text-[#22C55E] transition-colors" />
               <span className="text-gray-700 group-hover:text-[#22C55E] transition-colors">
@@ -116,14 +116,14 @@ export function Waitlist() {
           >
             <div className="flex items-center gap-3">
               <div className="p-2 bg-[#22C55E]/10 rounded-lg">
-                <File className="w-5 h-5 text-[#22C55E]" />
+                <File className="md:w-5 md:h-5 w-2 h-2 text-[#22C55E]" />
               </div>
               <span className="text-gray-700">{file.name}</span>
             </div>
             <motion.button
               whileHover={{ scale: 1.1, rotate: 90 }}
               onClick={() => setFile(null)}
-              className="text-gray-500 hover:text-red-500 transition-colors text-xl"
+              className="text-gray-500 hover:text-red-500 transition-colors md:text-xl text-l"
             >
               ✕
             </motion.button>
@@ -131,8 +131,8 @@ export function Waitlist() {
         )}
       </div>
       <footer className="flex flex-col items-center w-dvw border-t pt-8 mt-8">
-            <div className="flex flex-row justify-between w-[90%]">
-                <span>Thank You for visiting us. For help do feel free to contact</span>
+            <div className="flex md:flex-row flex-col items-center md:items-center-safe justify-between w-[90%]">
+                <span className="text-sm">Thank You for visiting us. For help do feel free to contact</span>
                 <span onClick={()=>navigate('/contact')} className="hover:cursor-pointer text-green-400">Contact</span>
             </div>
             <span className="text-muted-foreground border-t pt-8 mt-8 text-center">© 2025 sewna. All rights reserved.</span>

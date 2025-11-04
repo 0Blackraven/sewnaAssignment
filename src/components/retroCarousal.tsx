@@ -177,7 +177,7 @@ const TestimonialCard = ({
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               ref={containerRef}
-              className="max-w-5xl p-3 bg-linear-to-b from-[#f2f0eb] to-[#fff9eb] h-full z-60 rounded-3xl relative "
+              className="md:max-w-5xl max-w-[400px] p-3 bg-linear-to-b from-[#f2f0eb] to-[#fff9eb] h-full z-60 rounded-3xl relative "
             >
               <button
                 className="sticky top-4 h-8 w-8 right-0 ml-auto rounded-full flex items-center justify-center bg-[#4b3f33]"
@@ -188,18 +188,18 @@ const TestimonialCard = ({
               <motion.p className="text-2xl md:text-4xl font-normal italic text-[rgba(31, 27, 29, 0.7)] mt-4 dark:text-white font-tiemposHeadline lowercase m-8">
                 {testimonial.name}
               </motion.p>
-              <div className="text-[rgba(31, 27, 29, 0.7)] text-3xl lowercase font-thin font-tiemposHeadline leading-snug tracking-wide flex flex-col gap-10">
-                <div className="flex gap-5">
-                  <div className="text-[rgba(31, 27, 29, 0.7)] text-semibold">Website :</div>
-                  <a className="text-[rgba(31, 27, 29, 0.7)]" href={`${testimonial.website}`}>{testimonial.website}</a>
+              <div className="text-[rgba(31, 27, 29, 0.7)] lowercase font-thin font-tiemposHeadline leading-snug tracking-wide flex flex-col md:gap-10 gap-2">
+                <div className="flex md:gap-5 gap-2">
+                  <p className="text-[rgba(31, 27, 29, 0.7)] md:text-semibold text-l md:text-3xl">Website:</p>
+                  <a className="text-[rgba(31, 27, 29, 0.7)] text-l md:text-3xl" href={`${testimonial.website}`}>{testimonial.website}</a>
                 </div>
                 <div className="flex gap-5">
-                  <div className="text-[rgba(31, 27, 29, 0.7)] text-semibold">Email :</div>
-                  <div className="text-[rgba(31, 27, 29, 0.7)]">{testimonial.email}</div>
+                  <div className="text-[rgba(31, 27, 29, 0.7)] md:text-semibold text-l md:text-3xl">Email :</div>
+                  <div className="text-[rgba(31, 27, 29, 0.7)] text-l md:text-3xl">{testimonial.email}</div>
                 </div>
                 <div className="flex gap-5">
-                  <div className="text-[rgba(31, 27, 29, 0.7)] text-semibold">Number :</div>
-                  <div className="text-[rgba(31, 27, 29, 0.7)]">{testimonial.number}</div>
+                  <div className="text-[rgba(31, 27, 29, 0.7)] md:text-semibold text-l md:text-3xl">Number :</div>
+                  <div className="text-[rgba(31, 27, 29, 0.7)] text-l md:text-3xl">{testimonial.number}</div>
                 </div>
                 <Button variant="ghost" className="hover:bg-green-200">Hire</Button>
               </div>

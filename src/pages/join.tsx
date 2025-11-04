@@ -50,7 +50,7 @@ export function Join() {
     };
 
     return (
-        <div className="min-h-dvh flex justify-center items-center p-5">
+        <div className="min-h-dvh flex justify-center items-center p-5 mt-15 md:mt-0">
             <div className="border border-green-300 shadow-2xl shadow-green-300 rounded-xl py-8">
                 <motion.div
                     initial={{ x: -50, opacity: 0 }}
@@ -64,12 +64,12 @@ export function Join() {
                             initial={{ y: 20, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.3 }}
-                            className="mb-8 flex flex-col justify-center items-center"
+                            className="md:mb-8 mb-4 flex flex-col justify-center items-center"
                         >
-                            <span className="text-4xl text-gray-900 mb-3">
+                            <span className="md:text-4xl text-2xl text-gray-900 md:mb-3 mb-2">
                                 Turning dreams to reality
                             </span>
-                            <span className="text-gray-600">
+                            <span className="text-gray-600 text-sm md:text-xl">
                                 Hop in Onboard Wizard
                             </span>
                         </motion.div>
@@ -78,7 +78,7 @@ export function Join() {
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ delay: 0.4 }}
                             onSubmit={handleSubmit}
-                            className="space-y-6"
+                            className="md:space-y-6 space-y-2"
                         >
                             <div className="space-y-2">
                                 <label className="block text-sm text-gray-700">
@@ -163,7 +163,7 @@ export function Join() {
                                 <Button
                                     disabled = {!activateSubmit}
                                     type="submit"
-                                    className="w-full h-12 bg-linear-to-r from-[#22C55E] to-[#16A34A] hover:from-[#16A34A] hover:to-[#22C55E] text-white rounded-xl text-base shadow-lg"
+                                    className="w-full md:h-12 h-10 bg-linear-to-r from-[#22C55E] to-[#16A34A] hover:from-[#16A34A] hover:to-[#22C55E] text-white rounded-xl text-base shadow-lg"
                                 >
                                     Sign Up
                                 </Button>
@@ -183,9 +183,9 @@ export function Join() {
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                     type="button"
-                                    className="h-12 border-2 border-gray-200 rounded-xl hover:border-[#22C55E] transition-all flex items-center justify-center gap-2 p-6"
+                                    className="h-12 border-2 border-gray-200 rounded-xl hover:border-[#22C55E] transition-all flex items-center justify-center gap-2 md:p-6 p-2"
                                 >
-                                    <span className="text-gray-700">Google</span>
+                                    <span className="text-gray-700 text-sm">Google</span>
                                 </motion.button>
                             </div>
                         </motion.form>
