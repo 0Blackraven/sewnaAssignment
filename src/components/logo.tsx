@@ -1,15 +1,13 @@
 import {cn} from "../lib/utils"
-import { useNavigate } from "react-router-dom";
 
 interface logoProps {
     className ?: string
 }
 
 export default function Logo( {className} : logoProps) {
-    const navigate = useNavigate();
     return (
         <div
-            onClick={()=>navigate('/')}
+            onClick={()=>window.location.href = '/'}
             className={cn("logo-font text-lg sm:text-xl md:text-2xl text-black  cursor-pointer transition-transform duration-300 hover:scale-105",className)}
             // hover:scale-105
             style={{
